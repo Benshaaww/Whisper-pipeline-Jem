@@ -1,6 +1,3 @@
-# Server requirement: install the openai package
-# pip install openai
-
 import os
 import json
 import logging
@@ -8,7 +5,7 @@ from pathlib import Path
 from typing import Optional
 from openai import OpenAI, APIError, APIConnectionError, RateLimitError
 
-# Set up logging so we can track the health and status of the pipeline
+# Set up logging so we can track the status of the pipeline
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
